@@ -1,3 +1,12 @@
-const { User } = require("../models");
-// import sign token function from auth
-const { signToken } = require("../utils/auth");
+//importing user and book models
+const { User, Book } = require("../models");
+
+const resolvers = {
+  Query: {
+    users: async () => {
+      return await User.find({});
+    },
+  },
+};
+
+module.exports = resolvers;
