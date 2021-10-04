@@ -17,9 +17,9 @@ import { removeBookId } from "../utils/localStorage";
 const SavedBooks = () => {
   const { loading, error, data } = useQuery(GET_ME, {});
   const [removeBook] = useMutation(REMOVE_BOOK);
-  console.log("loading", loading);
-  console.log("error", error);
-  console.log("data", data);
+  // console.log("loading", loading);
+  // console.log("error", error);
+  // console.log("data", data);
   // const [userData, setUserData] = useState({});
 
   // // use this to determine if `useEffect()` hook needs to run again
