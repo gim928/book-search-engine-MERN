@@ -8,7 +8,6 @@ import {
   Button,
 } from "react-bootstrap";
 
-// import { useQuery } from "@apollo/client";
 import { useMutation } from "@apollo/client";
 import { GET_ME } from "../utils/queries";
 import { REMOVE_BOOK } from "../utils/mutations";
@@ -64,16 +63,6 @@ const SavedBooks = () => {
         variables: { bookId: bookId },
       });
       removeBookId(bookId);
-      // const response = await deleteBook(bookId, token);
-
-      // if (!response.ok) {
-      //   throw new Error("something went wrong!");
-      // }
-
-      // const updatedUser = await response.json();
-      // setUserData(updatedUser);
-      // // upon success, remove book's id from localStorage
-      // removeBookId(bookId);
     } catch (err) {
       console.error(err);
     }
